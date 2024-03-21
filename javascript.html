@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprendiendo Lenguajes de Programación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, monospace;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comprendiendo Lenguajes de Programación</h1>
+
+    </header>
+    <nav>
+        <a href="index.html">Blog</a>
+        <a href="java.html">Java</a>
+        <a href="html.html">HTML</a>
+        <a href="python.html">Python</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+    </nav>
+
+
+    <section id="javascript">
+        <h2>JavaScript</h2>
+        <p>JavaScript es un lenguaje de programación utilizado principalmente para agregar interactividad y dinamismo a páginas web. Puede manipular elementos HTML, responder a eventos del usuario y comunicarse con servidores para actualizar dinámicamente el contenido de la página.</p>
+        <p>Características clave de JavaScript:</p>
+        <ul>
+            <li>Interacción con el DOM: permite manipular elementos HTML y CSS en una página.</li>
+            <li>Manejo de eventos: permite responder a acciones del usuario como clics, desplazamientos, ingreso de teclado, etc.</li>
+            <li>Asincronía: facilita la comunicación con servidores y la realización de operaciones no bloqueantes.</li>
+            <li>Funciones de primera clase: pueden tratarse como cualquier otro objeto, pasarse como argumentos y devolverse como valores.</li>
+            <li>Librerías y frameworks: como jQuery, React, Angular, Vue.js, que facilitan el desarrollo de aplicaciones web complejas.</li>
+        </ul>
+        <p>Aquí tienes un ejemplo de código JavaScript que muestra cómo cambiar el contenido de un elemento HTML mediante el evento click:</p>
+        <pre><code>&lt;button id="btn"&gt;Haz clic&lt;/button&gt;
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("btn").addEventListener("click", function() {
+    document.getElementById("demo").innerHTML = "¡Hola, mundo!";
+});
+&lt;/script&gt;</code></pre>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Comprendiendo Lenguajes de Programación</p>
+    </footer>
+</body>
+</html>
