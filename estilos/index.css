@@ -91,3 +91,26 @@ footer {
     bottom: 0;
     width: 100%;
 } 
+/* Estilos para pantallas grandes (escritorio) */
+@media only screen and (min-width: 768px) {
+    body {
+        flex-direction: row;
+    }
+    #izquierda, #derecha {
+        width: 45%;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    body {
+        flex-direction: column;
+    }
+    #izquierda, #derecha {
+        width: 100%;
+    }
+    .blog-image, .blog-image2 {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+}
