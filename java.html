@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprendiendo Lenguajes de Programación</title>
+    
+<link rel="stylesheet" type="text/css" href="estilos/java.css">
+</head>
+<body>
+    <header>
+        <h1>Comprendiendo Lenguajes de Programación</h1>
+    </header>
+    <nav>
+        <a href="index.html">Blog</a>
+        <a href="java.html">java</a>
+        <a href="html.html">html y css</a>
+        <a href="python.html">python</a>
+        <a href="javascript.html">JavaScript</a>
+    </nav>
+    
+    <section id="java">
+        <h2>Java</h2>
+        <p>Java es un lenguaje de programación orientado a objetos, robusto y ampliamente utilizado en el desarrollo de una variedad de aplicaciones, incluyendo aplicaciones empresariales, aplicaciones móviles, sistemas embebidos y servicios web.</p>
+        <p>Algunos conceptos importantes de Java incluyen:</p>
+        <ul>
+                    
+        
+        <br><li><strong>Clase:</strong> es un prototipo o plantilla, que define un conjunto de atributos que conforman las caracteristicas para poder crear un objeto de esta.</br>
+<br>Una clase es un conjunto de objetos similares que comparten caracteristicas y comportamientos comunes.</br>
+Objeto: entidad compuesta de datos y de operaciones que se realizan sobre esos datos. Es una entidad provista de un conjunto de atributos y de comportamientos.
+Un objeto es una instancia (un ejemplar un caso concreto) de una clase (una categoria) y es una representacion concreta especifica de la clase.
+Atributos: son las caracteristicas propias de un objeto.
+</li><br>
+<br>
+<li><strong>Metodo:</strong> acciones o compartamientos de un objeto.
+</li>
+<br>
+<br>
+<div class="code-example">
+    <li><strong>Jerarquia de una clase</strong></li>
+    <li><strong>Ejemplo:</strong></li>
+(clase)public class:perro<br>
+(objeto)frida,brayan,scoobydoo<br>
+(atributo)string nombre,string raza string color <br>
+(metodos)public void ladrar();<br>
+</div>
+<br>
+<br>
+<div class="code-example">
+    <li><strong>Jerarquia de una clase</strong></li>
+    <li><strong>Ejemplo:</strong></li>
+(clase)proyecto<br>
+(objeto)pagina web<br>
+(atributos)nombre,fecha,duarcion<br>
+(metodos)realizar<br>
+</div>
+<br>
+<br>
+<div class="code-example">
+    <li><strong>Jerarquia de una clase</strong></li>
+    <li><strong>Ejemplo:</strong></li>
+(clase)estudiante<br>
+(objeto)juan perez,alex<br>
+(atributo)nombre,peso,edad<br>
+(metodos)comer,jugar<br>
+</div>
+<br>
+<br>
+<div class="code-example">
+    <li><strong>Jerarquia de una clase</strong></li>
+    <li><strong>Ejemplo:</strong></li>
+(clase)<br>
+(objeto)<br>
+(atributos)<br>
+(metodos)<br>
+</div>
+<br>
+<br>
+<div class="code-example">
+    <li><strong>Jerarquia de una clase</strong></li>
+    <li><strong>Ejemplo:</strong></li>
+Reglas de nombres<br>
+Clase: HolaMundo<br>
+Metodos: holaMundo<br>
+Variables: holaMundo<br>
+Constantes: HOLAMUNDO<br>
+</div>
+<br>
+<br>
+Identificadores (obligatorio)<br><br>
+<li><strong>los nombres de clases, objetos variables, constantes y metodos deben comenzaer con:</strong><br><br></li>
+<div class="code-example">
+-letra<br>
+-(_)guion bajo<br>
+-$<br>
+</div>
+<br>
+<br>
+<li><strong>Ejemplos:</strong></li>
+<br>
+<div class="code-example">
+holamundo ✔<br>
+_holamundo ✔<br>
+$holamundo ✔<br>
+#holamundo ✗<br>
+7holamundo ✗<br>
+</div>
+<br>
+<br>
+<strong>Para poder colocar cometarios dentro de nuestro codigo utilizaremos la siguiente sintaxis </strong><br><br>
+Comentarios<br>
+<div class="code-example">
+// Una línea<br>
+/* Varias <br>
+    lineas */<br>
+</div>
+<br>
+<br>
+<li><strong>Tipos de datos primitivos</strong></li><br>
+<div class="code-example">
+Logicos -> boolean<br>
+texto -> char<br>
+Enteros -> byte, short, int long<br>
+Flotantes -> float, double.<br>
+</div>
+<br>
+
+<li><strong>Entrada de datos por teclado </strong></li><br>
+
+    <li><strong>
+    En este codigo pediremos por teclado dos numeros en esta situacion haceremos el ejercisio de suma 
+</strong></li>
+ 
+ <pre><code>
+<li><strong>Ejercicio de practica:</strong></li>
+<div class="code-example">
+import javax.swing.*;
+//NOMBRE DE LA CLASE
+import javax.swing.JOptionPane;
+
+public class Calculadora{
+
+   public static void main (String [] args){
+      
+    int a = Integer.parseInt(JOptionPane.showInputDialog("Dame un numero"));
+      
+    int b = Integer.parseInt(JOptionPane.showInputDialog("Dame un numero"));
+      
+     int c=a+b;
+     
+      JOptionPane.showMessageDialog(null," la suma es = "+c);
+   }
+   
+}
+</div>
+</code></pre>
+<li><strong>
+    En este codigo pediremos por teclado dos numeros en esta situacion haceremos el ejercisio de division 
+</strong></li>
+<br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+<div class="code-example">
+import javax.swing.JOptionPane;
+
+public class Calculadora{
+
+   public static void main (String [] args){
+      
+    double a = Double.parseDouble(JOptionPane.showInputDialog("Dame un numero"));
+      
+    double b = Double.parseDouble(JOptionPane.showInputDialog("Dame un numero"));
+      
+    float c =(float) (a / b);
+     
+      JOptionPane.showMessageDialog(null," la suma es = "+c);
+      
+   }
+}
+</div>
+</code></pre>
+ <pre><code>
+<li><strong>En este codigo practicaremos los datos de entrada </strong>
+    <br><li><strong>Ejercicio de practica:</strong></li>
+    <div class="code-example">
+import javax.swing.JOptionPane;
+
+public class ejemplos{
+
+public static void main(String args[]){
+
+
+String a= JOptionPane.showInputDialog("como te llamas?");
+String b= JOptionPane.showInputDialog("que estudias?");
+byte c= Byte.parseByte(JOptionPane.showInputDialog("que edad tienes?"));
+double d= Double.parseDouble(JOptionPane.showInputDialog("estatura"));
+
+
+JOptionPane.showMessageDialog(null,"Tu nombre es, "+ a +" estudias, "+ b +" tu edad es, "+ c +" y mides, "+ d);
+
+
+}
+}  
+</div>  
+</code></pre>
+
+
+<br>
+<li><strong>tipos de variables ;</strong></li><br>
+<div class="code-example">
+(1)variables de clase o estaticas;<br>
+(2)variables instancias;<br>
+(3)variables locales;<br>
+</div>
+<br><br>
+
+<li><strong>retorna los valores de a, b   suma y resta </strong></li>
+ <br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+    <div class="code-example">
+import javax.swing.*;
+
+public class Datos {
+
+    int a;
+    static int b;
+
+    public void A() {
+        System.out.println("A");
+    }
+
+    public String B() {
+        return "B";
+    }
+
+    public void suma(int x, int y) {
+        int k = a + x + y;
+        System.out.println("la suma es: " + k);
+    }
+
+    public int resta(int m, int n) {
+        int d = m - n - b;
+        return d;
+    }
+}
+</div>
+</code></pre>
+<br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+    <div class="code-example">
+class AplicaDatos {
+    public static void main(String[] args) {
+        Datos dat = new Datos();
+
+        dat.a = Integer.parseInt(JOptionPane.showInputDialog("dame a"));
+        Datos.b = Integer.parseInt(JOptionPane.showInputDialog("dame b"));
+        dat.A();
+        dat.suma(5, 6);
+        System.out.println(dat.B());
+        System.out.println(dat.resta(7, 6));
+    }
+}
+</div>
+</code></pre>
+<li><strong>regresa valores de a , b tipo de valor </strong> </li>
+<br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+    <div class="code-example">
+import javax.swing.*;
+class TipoVar {
+
+    int a;
+    static int b;
+    
+     public void suma(int x, int y) {
+        int k = a + x + y;
+        System.out.println("la suma es: " + k);
+    }
+
+    public static void main(String[] args) {
+        TipoVar tv = new TipoVar();
+        
+        
+        String inputA = JOptionPane.showInputDialog("Ingrese el valor para 'a':");
+        tv.a = Integer.parseInt(inputA);
+
+        String inputB = JOptionPane.showInputDialog("Ingrese el valor para 'b':");
+        b = Integer.parseInt(inputB);
+
+        System.out.println("b vale: " + b);
+        System.out.println("a vale: " + tv.a);
+        tv.suma(tv.a, b);
+        
+   
+
+         }
+}
+</div>
+</code></pre>
+
+
+<li><strong>metodos y bloques estaticos</strong></li> 
+
+se peude invocar un metodo estatico sin ninguna estancia . el metodo estatico puede acceder
+solo atributos estaticos ,los bloques estaicos se ejecutan una sola vez cuando la clase es cargada
+y se utiliza para indicializar atributos estaticos,como los metodos y los bloques 
+estaticos se mantienen en memoria. primero se indisializan las variables estaticas de la clase 
+y despues los bloques estaticos. primero se cargan o se ejecutan en memoria todos los bloques 
+estaticos y despues el metodo (main)
+ <br><li><strong>Ejercicio de practica:</strong></li>
+<pre><code>
+    <div class="code-example">
+public class Estaticos {
+    public static void matEst() {
+        System.out.println("metodo estatico ");}
+    }
+
+     class PruebasEst {
+        static int x = 100;
+
+        public static void main(String[] arg) {
+            Estaticos.matEst();
+            System.out.println("x vale: " + x);
+        }
+
+        static {
+            System.out.println("inicializado");
+            x = 200;
+            }
+        }
+</div>
+   </code></pre>
+ <br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+<div class="code-example">
+import javax.swing.*;
+
+class Datos {
+    public static void dat() {
+        System.out.println("dat");
+    }
+
+    public static String mesg() {
+        return "hola mundo ";
+    }
+
+    public static void info(String a, String b) {
+        System.out.println(a + " " + b);
+    }
+}
+</div>
+</code></pre>
+<br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+    <div class="code-example">
+class Info {
+    public void suma(int a, int b) {
+        int c = a + b;
+        System.out.println("suma:" + c);
+    }
+
+    public static void resta(double x, double y) {
+        double z = x - y;
+        System.out.println("resta: " + z);
+    }
+
+    public static void main(String[] args) {
+        Datos.dat();
+        String mensaje = Datos.mesg();
+        System.out.println(mensaje);
+
+        String inputA = JOptionPane.showInputDialog("Ingrese el valor para 'a':");
+        int a = Integer.parseInt(inputA);
+
+        String inputB = JOptionPane.showInputDialog("Ingrese el valor para 'b':");
+        int b = Integer.parseInt(inputB);
+
+        Datos.info("Hola", "Mundo");
+
+        Info infoObjeto = new Info();
+        infoObjeto.suma(a, 10);
+
+        Info.resta(20.5, 8.3);
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>los metodos recursiovos son aquellos que se invocan a si mismos en algun momento de su ejecucion dentro del metodo existe una llamada asi mismo</strong></li> 
+<br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+    <div class="code-example">
+////////////// bucle infinito por que no hay salida
+class Recur {
+    void repetir() {
+                System.out.println("Repetir");
+        repetir();
+    }
+
+    public static void main(String[] arg) {
+        Recur r = new Recur();
+        r.repetir();
+    }
+}
+//////////// bucle infinito porque no hay salida 
+class Recur2 {
+        void imprimir(int x) {
+        System.out.println(x);
+        imprimir(x - 1);
+    }
+
+    public static void main(String[] arg) {
+        Recur2 r2 = new Recur2();
+        r2.imprimir(5);
+    }
+}
+///////////bucle con salida 
+class Recur3 {
+    void imprimir(int x) {
+        if (x > 0) {
+            System.out.println(x);
+            imprimir(x - 1);
+        }
+    }
+
+    public static void main(String[] arg) {
+        Recur3 r3 = new Recur3();
+        r3.imprimir(10);
+    }
+}
+</div>
+</code></pre>
+
+<li><strong><h2>encapsulamiento.</h2></strong></li>
+es el proceso de evitar que las variables de distancias privadas de una clase sean leidas o modificadas por otras clases el encapsulamiento 
+oculta los detalles de la inplementacion de un objeto 
+metodos set y gets 
+a las variables de instacias privadas, mientras que los gets se utilizan para obtener los valores de las variables de las instacias 
+Representacion clase en UML
+
+Estructuras de control
+operdores logicos 
+belooneas: logicos !not,&AND,'ok, XOR<br>
+<li><strong><h3>ejemplos</h3></strong></li><br> 
+<div class="code-example">
+|=true=verdadero<br>
+0=false=falso<br>
+!1=0<br>
+1|0=1<br>
+1|1=1<br>
+1&0=0<br>
+1&1=1<br>
+1^1=0<br>
+0^0=0<br>
+1^0=1<br>
+</div>
+<br>
+<li><strong><h2>sentencia if</h2></strong></li>
+<br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+    <div class="code-example">
+int a = 5, b = 10;
+if (a > b) {
+    System.out.println("a es mayor que b");
+} else if (a < b) {
+    System.out.println("a es menor que b");
+} else {
+    System.out.println("a y b son iguales");
+}
+</div>
+</code></pre>
+
+<li><strong><h2>sentencia swicth</h2></strong></li><br>
+<br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+    <div class="code-example">
+int opc = 2, a = 5, b = 6;
+switch (opc) {
+    case 1:
+        int c = a + b;
+        System.out.println("suma " + c);
+        break;
+    default:
+        System.out.println("opcion no valida");
+        break;
+}
+</div>
+</code></pre>
+
+<li><strong><h2>ciclo for</h2></strong></li>
+<br><li><strong>Ejercicio de practica:</strong></li>
+
+ <pre><code>
+    <div class="code-example">
+for (int i = 0; i < 10; i++) {
+    System.out.println("for");
+}
+</div>
+</code></pre>
+
+<li><strong><h2>ciclo while</h2></strong></li>
+ 
+ <br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+    <div class="code-example">
+int i = 0;
+while (i < 10) {
+    System.out.println("while");
+    i++;
+}
+</div>
+</code></pre>
+
+<li><strong><h2>ciclo while</h2></strong></li>
+ <br><li><strong>Ejercicio de practica:</strong></li>
+ <pre><code>
+    <div class="code-example">
+int i = 0;
+do {
+    System.out.println("do-while");
+    i++;
+} while (i < 10);
+</div>
+</code></pre>
+<li><strong>grupos de datos del mismo tipo pueden ser primitivos a clases se inicializan. con el valor por default</strong></li> 
+ <pre><code>
+    <div class="code-example">
+arre                 meter datos             mostar datos 
+4   u                arre[0]="a";            System.out.println(arre[0]);
+3   o                arre[1]="e";            System.out.println(arre[1]);
+2   i                arre[2]="i";            System.out.println(arre[2]);
+1   e                arre[3]="o";            System.out.println(arre[3]);
+0   a                arre[4]="u";            System.out.println(arre[4]);
+</div>
+</code></pre>
+
+   <li><strong>FORMAS VALIDAS PARA DECLARAR ARREGLOS</strong></li> 
+ <pre><code>
+    <div class="code-example">
+1)String arre [] = new String [5];
+2)String [] arre = new String [5];
+3)String arre [] = new String [] {"a","e","i","o","u"}
+4)String arre [] ={"a","e","i","o","u"}
+5)String arre [];
+  arre = new String [5];
+</div>
+</code></pre>
+
+<li><strong>ATRIBUTO LENGTH</strong></li>
+<br>
+regresa numero total de elementos
+arre.length-> regresa 5
+<br><br>
+<li><strong>MOSTRAR ARREGlOS</strong></li>
+
+ <pre><code>
+    <div class="code-example">
+class Arreglos {
+    public static void main(String[] args) {
+        int numeros[] = {2, 4, 5, 6, 8}; 
+        for (int i = 0; i < numeros.length; i++) {
+            System.out.println("numeros[" + i + "] = " + numeros[i]); 
+        }
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>INCREMENTAR CON EL CONTADOR DE 0 A 4</strong></li>
+ <pre><code>
+    <div class="code-example">
+class Arreglos {
+    public static void main(String[] args) {
+        int arre [] = new int[5]; 
+          
+        for (int i = 0; i < arre.length; i++) {
+          arre[i]=i; 
+            System.out.println("numeros[" + i + "] = " + arre[i]); 
+        }
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>CREAR CON FLOAT INSERTAR CANTIDAD DE ARREGLO</strong></li> 
+ <pre><code>
+    <div class="code-example">
+import javax.swing.JOptionPane;
+
+public class Arreglos {
+    public static void main(String[] args) {
+        int tamaño = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el tamaño del arreglo:"));
+        float arre[] = new float[tamaño];
+
+        for (int i = 0; i < arre.length; i++) {
+            String input = JOptionPane.showInputDialog("Ingrese el valor para la posicion " + i + ":");
+            arre[i] = Float.parseFloat(input);
+            System.out.println("numeros[" + i + "] = " + arre[i]);
+        }
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>SUMAR LOS ARREGLOS </strong></li>
+ <pre><code>
+    <div class="code-example">
+public class Arreglos {
+    public static void main(String[] args) {
+        
+        int numeros[] = {10, 11, 20, 21};
+
+        
+        int suma = 0;
+        for (int i = 0; i < numeros.length; i++) {
+            suma += numeros[i];
+        }
+
+        
+        System.out.println("La suma de todos : " + suma);
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>SUMAR NUMEROS PARES</strong></li> 
+ <pre><code>
+    <div class="code-example">
+public class Arreglos {
+    public static void main(String[] args) {
+      
+        int numeros[] = {10, 11, 20, 21};
+
+       
+        int suma = 0;
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] % 2 == 0) { 
+                suma += numeros[i];
+            }
+        }
+
+     
+        System.out.println("La suma de solo los números pares del arreglo es: " + suma);
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>ARREGLOS MULTIDIMENCIONALES</strong></li> 
+<br>
+Java no soporta arreglos bidimensionales, pero se puede lograr la misma finalidad con un arreglo de arreglos con el tamaño de los arreglos definidos.
+<br><br>
+<li><strong>Ejemplo 1:</strong></li>
+ <pre><code>
+    <div class="code-example">
+int x[][] = new int[3][2];
+
+Agregar elementos:
+x[0][1] = 10 , x[2][1] = 20
+
+
+
+// Ejemplo 1
+public class Ejemplo1 {
+    public static void main(String[] args) {
+        int[][] x = new int[3][2];
+        // Agregar elementos
+        x[0][1] = 10;
+        x[2][1] = 20;
+
+        // Imprimir la matriz
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(x[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>Ejemplo 2:</strong></li>
+<br>
+Arreglo de arreglos con el tamaño de los arreglos internos no definidos 
+ <pre><code>
+    <div class="code-example">
+int x[][] = new int[3][];
+
+Definiendo el tamaño de los arreglos internos:
+
+x[0] = new int[2];
+x[1] = new int[3];
+x[2] = new int[1];
+</div>
+</code></pre>
+
+<li><strong>Ejemplo 2.1:</strong></li>
+
+ <pre><code>
+    <div class="code-example">
+
+public class Ejemplo2 {
+    public static void main(String[] args) {
+        int[][] x = new int[3][];
+        // Definiendo el tamaño de los arreglos internos
+        x[0] = new int[2];
+        x[1] = new int[3];
+        x[2] = new int[1];
+
+        // Imprimir la longitud de los arreglos internos
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Longitud del arreglo interno en la posición " + i + ": " + x[i].length);
+        }
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>Ejemplo 3:</strong></li>
+<br>
+Llenar el arreglo con el valor del contador de ciclo for
+ <pre><code>
+     <div class="code-example">
+public class ArregloDim {
+    public static void main(String[] args) {
+        int[][] arreg = new int[5][3];
+        for (int i = 0; i < arreg.length; i++) {
+            for (int j = 0; j < arreg[i].length; j++) {
+                arreg[i][j] = j;
+                System.out.println("arreg[" + i + "," + j + "] = " + arreg[i][j]);
+            }
+        }
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>Ejemplo 3.1</strong></li>
+ <pre><code>
+     <div class="code-example">
+import javax.swing.JOptionPane;
+
+public class ArregloDim {
+    public static void main(String[] args) {
+        int[][] arreg = new int[3][2];
+        for (int i = 0; i < arreg.length; i++) {
+            for (int j = 0; j < arreg[i].length; j++) {
+                String input = JOptionPane.showInputDialog("Ingrese el valor para arreg[" + i + "," + j + "]:");
+                arreg[i][j] = Integer.parseInt(input);
+                System.out.println("arreg[" + i + "," + j + "] = " + arreg[i][j]);
+            }
+        }
+
+        
+           }
+}
+</div>
+ </code></pre>
+
+ <li><strong>Ejemplo 3.2</strong>
+ <pre><code>
+     <div class="code-example">
+public class Main {
+    public static void main(String[] args) {
+        imprimirSecuencias();
+    }
+    
+    public static void imprimirSecuencias() {
+        int[][] secuencias = {
+            {4},
+            {4, 4},
+            {4, 4, 4},
+            {4, 4, 4},
+            {4, 4, 4, 4}
+        };
+        
+        for (int i = 0; i < secuencias.length; i++) {
+            for (int j = 0; j < secuencias[i].length; j++) {
+                System.out.print(secuencias[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>clases Abstractas</strong></li><br>
+es aquella clase que puede tener uno o mas metodos abstracros los cuales solo tienen la declaracion
+y no posen cuerpo de difinicion estos metdoso abstractos se implementan en las clases de las subclases abstractas 
+no se pueden crear instancias de las clases abstractas si una subclase que ereda de una clase abstracta no implememtan 
+ningun metodo abstracto esta puede ser declara abstracta cuando se herede de una clase abstracto <br><br>
+<li><strong>Ejemplo 1</strong></li>
+ <pre><code>
+     <div class="code-example">
+import javax.swing.JOptionPane;
+
+public abstract class Arbol {
+    String tronco, hojas, ramas;
+
+    public String creaTronco() {
+        return tronco;
+    }
+
+    public abstract String creaHojas();
+
+    public abstract String creaRamas();
+}
+</div>
+</code></pre>
+<br><li><strong>Ejemplo 2</strong></li>
+ <pre><code>
+ <div class="code-example">
+import javax.swing.JOptionPane;
+
+public class Encino extends Arbol {
+
+    public String creaHojas() {
+        return hojas;
+    }
+
+    public String creaRamas() {
+        return ramas;
+    }
+
+    public static void main(String[] args) {
+        Encino encino = new Encino();
+
+        encino.tronco = JOptionPane.showInputDialog(null, "Introduce el tronco del encino:");
+        encino.hojas = JOptionPane.showInputDialog(null, "Introduce las hojas del encino:");
+        encino.ramas = JOptionPane.showInputDialog(null, "Introduce las ramas del encino:");
+
+        JOptionPane.showMessageDialog(null, "Tronco: " + encino.creaTronco() +  
+                                            "\nHojas: " + encino.creaHojas() +
+                                            "\nRamas: " + encino.creaRamas());
+    }
+}
+</div>
+</code></pre>
+
+
+<li><strong>palabra reservada "super"</strong></li>
+<br>
+una subclase hereda los metodos y atributos de la superClase o clase padre 
+los constructores o se pueden heredar se pueden invocar constructores desde 
+subClases con super la invocaio debe ser en constructor y debe ir con la primera linea del constructo
+<br><br>
+<li><strong>ejemplos:</strong></li>
+ <pre><code>
+     <div class="code-example">
+super(10);//invoca el constructor que recibe un numero
+super("juan");//invoca al constructores que recibe una cadena
+</div>
+</code></pre>
+
+<li><strong>Constructores</strong></li> 
+<br>
+un constructor es un metodo especial que sirve para inicializare la clase o objeto
+los constructores tienen el mismo nombre que la clase y no tienen tipo de dato 
+ni siquiera void , no regresa ningun valor y no se heredan deben tener 
+un constructor, si no se declara uno el sistema crea un constructor por default 
+<br><br><li><strong>Ejemplo 1</strong></li>
+ <pre><code>
+     <div class="code-example">
+class Perro{
+public Perro(){
+System.out.println("perro cons");
+}
+public Perro(String nombre){
+System.out.println(nombre);
+}
+public static void main(String arg[]){
+Perro p=new Perro();
+new Perro("fidulais ")
+}
+}
+</div>
+</code></pre>
+<br><li><strong>Ejemplo 2</strong></li>
+ <pre><code>
+     <div class="code-example">
+import javax.swing.JOptionPane;
+
+class Perro {
+    public Perro() {
+        JOptionPane.showMessageDialog(null, "perro cons");
+    }
+
+    public Perro(String nombre) {
+        JOptionPane.showMessageDialog(null, nombre);
+    }
+
+    public static void main(String arg[]) {
+        Perro p = new Perro();
+        new Perro("fidulais ");
+    }
+}
+</div>
+</code></pre>
+<br><li><strong>Ejemplo 3</strong></li>
+ <pre><code>
+ <div class="code-example">
+import javax.swing.JOptionPane;
+
+public class Encino extends Arbol {
+
+    public String creaHojas() {
+        return hojas;
+    }
+
+    public String creaRamas() {
+        return ramas;
+    }
+
+    public static void main(String[] args) {
+        Encino encino = new Encino();
+
+        encino.tronco = JOptionPane.showInputDialog(null, "Introduce el tronco del encino:");
+        encino.hojas = JOptionPane.showInputDialog(null, "Introduce las hojas del encino:");
+        encino.ramas = JOptionPane.showInputDialog(null, "Introduce las ramas del encino:");
+
+        JOptionPane.showMessageDialog(null, "Tronco: " + encino.creaTronco() +  
+                                            "\nHojas: " + encino.creaHojas() +
+                                            "\nRamas: " + encino.creaRamas());
+    }
+}
+</div>
+</code></pre>
+<br><li><strong>Ejemplo 4</strong></li>
+ <pre><code>
+     <div class="code-example">
+import javax.swing.JOptionPane;
+
+class Perro {
+    public Perro() {
+        JOptionPane.showMessageDialog(null, "perro cons");
+    }
+
+    public Perro(String nombre) {
+        JOptionPane.showMessageDialog(null, nombre);
+    }
+
+    public static void main(String arg[]) {
+        Perro p = new Perro();
+        new Perro("fidulais ");
+    }
+}
+</div>
+</code></pre>
+
+<br><li><strong>Ejemplo 5</strong></li>
+ <pre><code>
+ <div class="code-example">
+import javax.swing.JOptionPane;
+
+class Empleado {
+    
+    public String obtenerDatos() {
+        
+        return "Empleado: datos";
+    }
+}
+
+class Jefe extends Empleado {
+    double bono = 1000;
+
+    public static void main(String arg[]) {
+        Jefe j = new Jefe();
+        JOptionPane.showMessageDialog(null, j.obtenerDatos());
+    }
+
+    public String obtenerDatos() {
+        return super.obtenerDatos() + "\nBono: " + bono;
+    }
+}
+</div>
+</code></pre>
+<br><li><strong>Ejemplo 6</strong></li>
+ <pre><code>
+ <div class="code-example">
+import javax.swing.JOptionPane;
+
+class Empleado {
+    public Empleado() {
+        JOptionPane.showMessageDialog(null, "Juan");
+    }
+
+    public Empleado(String nombre) {
+        JOptionPane.showMessageDialog(null, nombre);
+    }
+}
+
+class Jefe extends Empleado {
+    public Jefe() {
+        super();//se invoca el constructor empleado()
+    }
+
+    public Jefe(String nombre) {
+        super(nombre);
+    }
+
+    public static void main(String arg[]) {
+        Jefe j = new Jefe();      //se invoca el constructor jefe()
+        Jefe je = new Jefe("ana");     //jefe (String nombre)
+    }
+}
+</div>
+</code></pre>
+
+<li><strong>INTERFACES</strong></li> 
+<br>
+es un conjunto de conportamientos abstractos que se pueden mesclar con cualquier clase,
+contiene solamente definiciones y constantes de metodos abstractos no tiene variabes de instancia 
+e incrementaciones de metodos. Una ves incluida una interfaces se tiene que incrementar todos los metodos 
+de la interface.
+<br>
+ Todas las variables der una interface son publicas, final y estaticas por default. Todos los metodos en una 
+interface son publicos y abstractos por default  
+<br><br>
+<li><strong>EJEMPLO 1</strong></li>     
+ <pre><code>
+     <div class="code-example">
+import javax.swing.JOptionPane;
+
+interface ArbolGrande {
+    void asignaAltura(float altura);
+    float obtieneAltura();
+}
+//////////////////////////////////////////////
+interface ArbolAccion {
+    void cortarArbol();
+    void plantarArbol();
+}
+//////////////////////////////////////////////
+class Arbol {
+    float altura;
+
+    public Arbol(float altura) {
+        this.altura = altura;
+    }
+}
+/////////////////////////////////////////////
+class Encino extends Arbol implements ArbolGrande, ArbolAccion {
+    public Encino(float altura) {
+        super(altura);
+    }
+
+    public void asignaAltura(float altura) {
+        this.altura = altura;
+        JOptionPane.showMessageDialog(null, "Se asignó la altura del encino a: " + altura);
+    }
+
+    public float obtieneAltura() {
+        JOptionPane.showMessageDialog(null, "La altura del encino es: " + altura);
+        return altura;
+    }
+
+    public void cortarArbol() {
+        JOptionPane.showMessageDialog(null, "Se cortó el encino");
+    }
+
+    public void plantarArbol() {
+        JOptionPane.showMessageDialog(null, "Se plantó el encino");
+    }
+
+    public static void main(String[] args) {
+        Encino encino = new Encino(0.0f);
+
+        encino.cortarArbol();
+        encino.plantarArbol();
+        encino.asignaAltura(0.0f);
+        encino.obtieneAltura();
+    }
+}
+</div>
+</code></pre>
+<br><li><strong>Ejemplo 2</strong></li>
+ <pre><code>
+ <div class="code-example">
+import javax.swing.JOptionPane;
+
+interface Depa {
+    void obtenerNombreDepa(String nombre);
+}
+
+interface Empleado extends Depa {
+    void obtenerNombreEmp(String empleado);
+}
+
+class Jefe implements Empleado {
+
+    public void obtenerNombreDepa(String nombre) {
+        JOptionPane.showMessageDialog(null, "Nombre del departamento: " + nombre);
+    }
+
+    public void obtenerNombreEmp(String empleado) {
+        JOptionPane.showMessageDialog(null, "Nombre del empleado: " + empleado);
+    }
+
+    public void obtenerNombreJefe(String jefe) {
+        JOptionPane.showMessageDialog(null, "Nombre del jefe: " + jefe);
+    }
+
+    public static void main(String[] args) {
+        Jefe j = new Jefe();
+        j.obtenerNombreDepa("Departamento de Ventas");
+        j.obtenerNombreEmp("Angel Guillermo Gomora Gomez");
+        j.obtenerNombreJefe("Rafael Aguayo Estrada");
+    }
+}
+</div>
+</code></pre>
+<li><strong>Poliformismo</strong></li> 
+<br>
+
+Es la habilidad para tener muchas formas diferentes,
+permite que un solo nombre de clase o de metodo 
+represente diferente codigo seleccionado mediante algun 
+mecanismo automatico de esta manera un nombre puede tomar 
+diferentes formas y puesto que puede representar diferente codigo,
+tambien puede representar diferentes comportamientos 
+<br><br>
+<li><strong>Ejemplo 1: </strong></li>
+
+<pre><code>
+ <div class="code-example">
+class Personalidad{
+public String hablar(){
+return "Personalidad";
+}
+}
+class Pesimista extends Personalidad{
+public String hablar(){
+return "pesimista";
+}
+}
+class Optimista extends Personalidad{
+public String hablar(){
+return "optimista";
+}
+}
+
+class Habla{
+public static void main(String [] arg){
+Habla h = new Habla();
+h.haceHablar(new Personalidad());
+h.haceHablar(new Pesimista());
+h.haceHablar(new Optimista());
+
+}
+public void haceHablar(Personalidad op){
+System.out.println(op.hablar());
+}
+}
+
+class Habla2{
+public static void main (String [] arg){
+Personalidad per1=new Personalidad();
+Personalidad per2=new Pesimista();
+Personalidad per3=new Optimista();
+System.out.println(per1.hablar());
+System.out.println(per2.hablar());
+System.out.println(per3.hablar());
+}
+}
+</code></pre></div>
+<br>
+<li><strong>Ejemplo 2: </strong></li>
+<pre><code>
+ <div class="code-example">
+class Empresa{
+public void datos(){
+System.out.println("empresa");
+}
+
+}
+class Depa extends Empresa{
+public void datos(){
+System.out.println("depa");
+}
+}
+
+class Empleado extends Depa{
+public void datos(){
+System.out.println("Empleado");
+   }
+}
+class Jefe extends Empleado{
+public void datos(){
+System.out.println("Jefe");
+   }
+public static void main (String args[]){
+Empresa emp= new Empresa();
+emp.datos();
+Empresa dep= new Depa();
+dep.datos();
+Empresa empl= new Empleado();
+empl.datos();
+Empresa jef= new Jefe();
+jef.datos();
+
+
+   }
+   }
+</code></pre></div>
+<br><br>
+Son una coneccion de datos cuya organizacion se caracteriza por las funciones de acceso que se usa para almacenar 
+y acceder a elementos individuales un tipo de dato abstracto ADT(abstrac data type) es un conjunto de objetos 
+con ciertas operarciones definidos sobre ellos los tipos de datos 
+<br><br><li><strong>Abstractos se clasifican en:</strong></li>
+
+<pre><code>
+ <div class="code-example">
+---------------------------
+(1)lineales               |
+TDA listas ligadas        |
+TDA pilas                 |
+TDA colas                 |
+                          |dinamicas(crecen en tiempo real)
+(2)No lineales            |
+TDA Arboles               |
+TDA Grafos                |
+---------------------------
+
+</code></pre></div>
+
+Una pila es una coneccion de elemtos en la cual todas las inserciones,eliminaciones y accesos toman lugar
+en un solo lugar de la pila, edl cual se conoce tope de la pila.
+en una pila el ultimo elemento entrar sera el primero en salir ya que este tiene acceso esta propiedad
+<br><br>
+<li><strong>Se conoce como lifo(Last In Frist Out)</strong></li> 
+<br>
+<li><strong>Ejemplo 1</strong></li>
+<pre><code>
+ <div class="code-example">
+import javax.swing.JOptionPane;
+import java.util.Stack;
+class pila {
+    public static void main(String[] args) {
+        
+        
+        
+        int tam = Integer.parseInt(JOptionPane.showInputDialog("cuantos elemtos?"));
+        Stack pila = new Stack(); // Creando un objeto de la clase Stack con identificador 'pila'
+        
+        for (int i = 0; i < tam; i++) {
+            pila.push(JOptionPane.showInputDialog("Ingrese nombre:"));
+        }
+       pila.push(JOptionPane.showInputDialog("Ingrese otro nombre:"));
+        while (!pila.isEmpty())  System.out.println("elementos: " + pila.pop());
+          
+        }
+    }
+
+</div></code></pre>
+
+Crear un arreglo de numeros enteros donde el tamaño se meta por JOptionPane
+meter el tamño de los arreglños y con el mismo metodo meter los rreglos y meter los elemtos en una pila y mostrarla en pantralla 
+<br><br>
+<li><strong>Ejemplo 2</strong></li>
+<pre><code>
+ <div class="code-example">
+
+import javax.swing.JOptionPane;
+import java.util.Stack;
+
+class Pila1 {
+    public static void main(String[] args) {
+        int tam = Integer.parseInt(JOptionPane.showInputDialog("¿Cuántos elementos quieres en el arreglo?"));
+        int[] arreglo = new int[tam];
+
+        // Llenar el arreglo
+        for (int i = 0; i < tam; i++) {
+            arreglo[i] = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número entero para la posición " + i));
+        }
+
+        // Crear la pila
+        Stack pila = new Stack();
+
+        // Llenar la pila con los elementos del arreglo
+        for (int i = 0; i < tam; i++) {
+            pila.push(arreglo[i]);
+        }
+
+        // Mostrar la pila en pantalla
+        System.out.println("Elementos de la pila en orden inverso:");
+        for (int i = 0; i < tam; i++) {
+            System.out.println("Elemento: " + pila.pop());
+        }
+    }
+}
+
+</code></pre></div>
+
+<br><li><strong>Ejemplo 3</strong></li>
+<pre><code>
+ <div class="code-example">
+import java.util.LinkedList;
+
+public class LigaLigada {
+    public static void main(String[] args) {
+        LinkedList l = new LinkedList();
+
+        if (l.isEmpty()) {
+            System.out.println("La lista esta vacia");
+        }
+
+        l.add("uno");
+        l.add("dos");
+        l.add("tres");
+        l.addFirst("primero");
+        l.addLast("ultimo");
+
+        System.out.println("Tamano de la lista: " + l.size());
+
+        l.remove("primero");
+        System.out.println(l.indexOf("tres"));
+        System.out.println(l);
+    }
+}
+  
+</code></pre></div>
+Es una estructura de datos en la cual todas las inserciones son echas en un extremo y todas las 
+eliminaciones de accesos se realiza en el otro extremo de la cola tienen la 
+propiedad FIFO(Frist in Frist Out)el primero entrar es el ultimo en salir.
+<br><br>
+<li><strong>Ejemplo 4</strong></li>
+<pre><code>
+ <div class="code-example">
+
+import java.util.Queue;
+import java.util.LinkedList;
+
+class Aplica {
+    public static void main(String args[]) {
+    
+        Queue q = new LinkedList();
+        
+        q.add("uno");
+        q.add("dos");
+        q.add("tres");
+        //q.clear();
+        q.remove("tres"); // borra el elemento especificada 
+        System.out.println(q.size());// regresa enumerado de elemtos
+        System.out.println(q.peek());//regresa el primer elemtos 
+        while (!q.isEmpty())System.out.println(q.poll());
+        
+    }
+}
+</code></pre></div><br>
+<li><strong>Ejemplo 5</strong></li>
+<pre><code>
+ <div class="code-example">
+//hacer un programa que sume los elemtos de la cola (tipo int) introduciodos por teclado tantos el numero
+//de elemtos y los elemtos 
+import javax.swing.JOptionPane;
+import java.util.Queue;
+import java.util.LinkedList;
+
+class Aplica1 {
+    public static void main(String args[]) {
+        Queue q = new LinkedList();
+
+        String numElementosString = JOptionPane.showInputDialog("Ingrese el número de elementos:");
+        int numElementos = Integer.parseInt(numElementosString);
+
+        for (int i = 0; i < numElementos; i++) {
+            String elementoString = JOptionPane.showInputDialog("Ingrese el elemento " + (i + 1) + ":");
+            int elemento = Integer.parseInt(elementoString);
+            q.add(elemento);
+        }
+
+        int suma = 0;
+        while (!q.isEmpty()) {
+            suma += q.poll();
+        }
+
+        JOptionPane.showMessageDialog(null, "Suma de los elementos: " + suma);
+    }
+}
+</code></pre></div>
+
+
+<li><strong>MANEJO DE EXCEPCIONES</strong></li><br>
+
+son un mecanismo usado para describir que hacer cuando inesaperado sucede.
+hay dos tipos de ecepciones 
+A excepciones checadas (checked) son los que espera el programador. (errores de copilacion)
+ejemplos 
+archivos no encontrados falla en la red argumentos no aecptables o erroneos 
+B excepciones no checadas (un checked) las no esperadas por el programador ocurre en 
+tiempo de ejecucion 
+ 
+la ejecucion normal del programa por lo tanto no se puede hacer nada 
+ejemplo de error
+desbordamiento de memoria indica una condicion anormal que puede ser subsanada para evitar 
+la terminacion del programa 
+<br><br>
+<li><strong>ATRAPAR O CAPTURAR ECEPCIONES.</strong></li><br>
+setencias try/catch
+se pueden omotir la clausula cathc o la clausula fanally pero no ambas<br><br>
+<li><strong>sintaxis:</strong></li>
+<pre><code>
+ <div class="code-example">
+try{//codigo que puede generar una excepcion}
+catch(mi Excepcion me){//codigo a ejecutar si ocurre una excepcion en particular}
+.
+.
+.
+catch(Excepcion or){codigo a ejecutar si ocurre cualquier excepcion}
+finally{codigo que siempre se ejecuta}
+</code></pre></div><br><br><br><br>
+
+
+</pre>
+</ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Comprendiendo Lenguajes de Programación</p>
+    </footer>
+</body>
+</html>
