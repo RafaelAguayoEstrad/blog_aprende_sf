@@ -1,12 +1,10 @@
-
+/* Estilos generales */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
-    display: flex;
-    justify-content: space-between;
 }
 
 header {
@@ -46,7 +44,7 @@ section {
 }
 
 .redes {
-    margin-top: 20px; /* Agregamos espacio entre la sección de publicaciones y las redes */
+    margin-top: 20px;
 }
 
 .redes a {
@@ -57,32 +55,29 @@ section {
     transition: transform;
 }
 
-#izquierda {
-    width: 45%;
-    padding: 0 20px;
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    #izquierda, #derecha {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
 
-#derecha {
-    width: 45%;
-    padding: 0 20px;
-}
-
-.blog-image {
-    width: 100%; /* Para que la imagen ocupe todo el ancho */
-    max-width: 700px; /* Establecer un ancho máximo */
+/* Estilos para la imagen del blog */
+.blog-image, .blog-image2 {
+    width: 100%;
+    max-width: 100%; /* Cambiado para adaptarse al ancho de la pantalla */
     display: block;
-    margin: 0 auto 20px; /* Centrar la imagen y añadir espacio en la parte inferior */
-    border-radius: 5px; /* Agregar bordes redondeados */
+    margin: 0 auto 20px;
+    border-radius: 5px;
 }
 
 .blog-image2 {
-    width: 100%; /* Para que la imagen ocupe todo el ancho */
-    max-width: 400px; /* Establecer un ancho máximo */
-    display: block;
-    margin: 0 auto 20px; /* Centrar la imagen y añadir espacio en la parte inferior */
-    border-radius: 500px; /* Agregar bordes redondeados */
+    max-width: 80%; /* Cambiado para adaptarse al ancho de la pantalla */
+    border-radius: 50%; /* Corregido para un círculo perfecto */
 }
 
+/* Estilos para el footer */
 footer {
     background-color: #333;
     color: #fff;
