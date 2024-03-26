@@ -91,19 +91,3 @@ footer {
     bottom: 0;
     width: 100%;
 } 
-@media only screen and (max-width: 768px) {
-    .game {
-        width: calc(50% - 20px);
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    .game {
-        width: calc(100% - 20px);
-    }
-}
-
-
-@media only screen and (min-width: 1025px) {
-  /* Estilos para pantallas grandes */
-}
