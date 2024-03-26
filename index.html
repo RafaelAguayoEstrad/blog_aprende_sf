@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Rafael Aguayo Estrada</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
             color: #333;
+            display: flex;
+            justify-content: space-between;
         }
 
         header {
@@ -20,138 +23,149 @@
             text-align: center;
         }
 
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
         }
 
         section {
-            padding: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             background-color: #fff;
             border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        footer {
-            background-color: #333;
+        .boton {
+            display: inline-block;
+            background-color: #444;
             color: #fff;
-            text-align: center;
-            padding: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
         }
 
-        /* Estilos adicionales */
-        .juegos {
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            margin-bottom: 20px;
+        .boton:hover {
+            background-color: #333;
         }
-        .juegos h2 {
-            color: #333;
-            text-align: center;
-        }
-        .juego {
-            margin-bottom: 10px;
+
+        .redes {
+            margin-top: 20px; /* Agregamos espacio entre la sección de publicaciones y las redes */
         }
 
         .redes a {
             display: inline-block;
             margin: 0 10px;
+            font-size: 24px;
             color: #fff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            background-color: #444;
-            padding: 10px 20px;
-            border-radius: 5px;
+            transition: transform;
         }
 
-        .redes a:hover {
+        #izquierda {
+            width: 45%;
+            padding: 0 20px;
+        }
+
+        #derecha {
+            width: 45%;
+            padding: 0 20px;
+        }
+        .blog-image {
+            width: 100%; /* Para que la imagen ocupe todo el ancho */
+            max-width: 700px; /* Establecer un ancho máximo */
+            display: block;
+            margin: 0 auto 20px; /* Centrar la imagen y añadir espacio en la parte inferior */
+            border-radius: 5px; /* Agregar bordes redondeados */
+        }
+        .blog-image2 {
+            width: 100%; /* Para que la imagen ocupe todo el ancho */
+            max-width: 400px; /* Establecer un ancho máximo */
+            display: block;
+            margin: 0 auto 20px; /* Centrar la imagen y añadir espacio en la parte inferior */
+            border-radius: 500px; /* Agregar bordes redondeados */
+        }
+        footer {
             background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
-
     </style>
 </head>
 <body>
     <header>
-        <h1>Blog de Rafael Aguayo Estrada</h1>
+        <img src="img/mia.jpg" alt="Rafael Aguayo Estrada" class="blog-image2"><br>
+        <h1>Desarrollador de software y multiplataforma <br>
+        Rafael Aguayo Estrada</h1>
+           
+<br><br>
+           <section style="color: black;">
+    <h2>Bienvenido al Blog de Desarrollo de Software</h2>
+    <p>¡Bienvenidos a mi blog personal dedicado al fascinante mundo del desarrollo de software! Aquí compartiré experiencias, conocimientos y novedades sobre diversos aspectos de la industria tecnológica.</p>
+</section>
+
+
+            <a href="https://www.facebook.com/profile.php?id=100094620338828" class="animacion-facebook boton">Facebook</a>
+            <a href="https://www.twitch.tv/tocino000" class="animacion-Twitch boton">Twitch</a>
+            <a href="https://www.instagram.com/junior_ae_/" class="animacion-instagram boton">Instagram</a>
+            
+
     </header>
-     <nav>
-        <a href="j.html">video juegos</a>
-        <a href="a.html">Aprende APIs</a>
-        <a href="leng.html">Aprende lenguajes de programacion</a>
-    </nav>
-
-    <section id="inicio">
-        <h2>Bienvenido al Blog de Desarrollo de Software</h2>
-        <p>¡Bienvenidos a mi blog personal dedicado al fascinante mundo del desarrollo de software! Aquí compartiré experiencias, conocimientos y novedades sobre diversos aspectos de la industria tecnológica. Mi nombre es Rafael Aguayo Estrada y soy estudiante de desarrollo de software. Comencé este blog con el afán de ayudar y compartir los conocimientos que me han aportado mis profesores de la Universidad Fidel Velázquez. Hasta el momento, he aprendido una variedad de lenguajes de programación, así como la resolución y creación de algunos códigos. Esto incluye diseño, presentación, conexión con bases de datos y elaboración de páginas web, así como aplicaciones móviles con diferentes funcionalidades.
-
-En este espacio, podrán encontrar todo esto y mucho más en los apartados de "Aprende" para APIs nuevas, tanto para avanzados como para principiantes o personas que desean mejorar su lógica y comprensión de lenguajes de programación. También tendremos un apartado dedicado a los amantes de los videojuegos, donde podrán conocer más sobre sus juegos favoritos, así como descubrir nuevos juegos para disfrutar con sus amigos o simplemente por diversión. Recuerden que es importante estudiar, pero también es crucial disfrutar de un rato solo o con amigos y familiares, ya sea en el mundo virtual disfrutando de un juego o dedicando tiempo a actividades físicas o sociales.
-
-
-
-
- </p>
-    </section>
-
-    <section id="blog">
-        <h2>Últimas Publicaciones</h2>
-        <article>
-            <h3>Mi Primer Proyecto de Software: Un Viaje Inspirador</h3>
-            <p>En esta publicación, relato mi emocionante experiencia al completar mi primer proyecto de software. Exploro los desafíos enfrentados, las lecciones aprendidas y la satisfacción de ver mi trabajo cobrar vida en forma de una aplicación funcional.
-            fueron aprende a programa lenguajes de progrmacion y explora el mundo de los videojuegos </p>
-        </article>
-    </section>
-
-    <section id="lenguajes">
-        <h2>Aprende Lenguajes de Programación</h2>
-        <p>Sumérgete en el mundo de la programación y explora una variedad de lenguajes, desde el versátil JavaScript hasta el poderoso Python. Descubre sus características, aplicaciones y cómo utilizarlos para construir aplicaciones web, móviles y más.</p>
-    </section>
-
-    <section id="apis">
-        <h2>Descubre el Mundo de las APIs</h2>
-        <p>Las APIs (Interfaces de Programación de Aplicaciones) son fundamentales en el desarrollo moderno de software. Aprende cómo utilizarlas para acceder a datos, funcionalidades y servicios externos, agregando valor y versatilidad a tus proyectos.</p>
-    </section>
-
-    <section id="juegos">
-        <h2>Explora el Mundo de los Videojuegos</h2>
-        <p>Sumérgete en el emocionante universo de los videojuegos. Descubre reseñas, análisis y recomendaciones de una amplia gama de títulos, desde clásicos atemporales hasta las últimas novedades, ¡y prepárate para vivir nuevas aventuras!</p>
-    </section>
-     <section id="universidad">
-        <div class="container">
+         
+    <div id="izquierda">
+        
+        <section id="universidad">
             <h2>Universidad Tecnológica Fidel Velázquez</h2>
             <p>La Universidad Tecnológica Fidel Velázquez es una institución educativa comprometida con la formación de profesionales altamente capacitados en diversas áreas tecnológicas.</p>
-            <p>Ubicada en Ciudad de México, nuestra universidad ofrece una amplia gama de programas académicos en áreas como Ingeniería en Sistemas Computacionales, Ingeniería en Tecnologías de la Información y Comunicaciones, Ingeniería Industrial, entre otros.</p>
-            <p>Nuestra misión es proporcionar una educación de calidad que promueva la excelencia académica, la innovación y el desarrollo integral de nuestros estudiantes. Buscamos contribuir al progreso social y económico a través de la formación de profesionales competentes y comprometidos con su entorno.</p>
-            <p>Nuestra visión es ser una institución reconocida a nivel nacional e internacional por nuestra excelencia académica, investigación innovadora y contribución al desarrollo tecnológico y social.</p>
+            <p>Nuestra misión es proporcionar una educación de calidad que promueva la excelencia académica, la innovación y el desarrollo integral de nuestros estudiantes.</p>
             <p>Para más información sobre la Universidad Tecnológica Fidel Velázquez, puedes visitar <a href="https://utfv.edu.mx/">nuestro sitio web</a>.</p>
-        </div>
-    </section>
-    <div class="redes">
-                <a href="https://www.facebook.com/profile.php?id=100094620338828" class="animacion-facebook">Facebook</a>
-                <a href="https://www.twitch.tv/tocino000" class="animacion-Twitch">Twitch</a>
-                <a href="https://www.instagram.com/junior_ae_/" class="animacion-instagram">Instagram</a>
-            </div>
+        </section>
+        
+        <section id="blog">
+            <h2>Últimas Publicaciones</h2>
+            <article>
+                <h3>Mi Primer Proyecto de Software: Un Viaje Inspirador</h3>
+                <p>En esta publicación, relato mi emocionante experiencia al completar mi primer proyecto de software. Exploro los desafíos enfrentados, las lecciones aprendidas y la satisfacción de ver mi trabajo cobrar vida en forma de una aplicación funcional.</p>
+            </article>
+</section>
+           <section id="lenguajes">
+            <img src="img/aprende.jpg" alt="Rafael Aguayo Estrada" class="blog-image">
+            <h2>Aprende Lenguajes de Programación</h2>
+            <p>Sumérgete en el mundo de la programación y explora una variedad de lenguajes, desde el versátil JavaScript hasta el poderoso Python. Descubre sus características, aplicaciones y cómo utilizarlos para construir aplicaciones web, móviles y más.</p>
+            <a href="leng.html"  class="boton">Aprende Lenguajes de Programación</a>
+        </section>  
+        
+    </div>
+
+    <div id="derecha">
+        
+
+       
+
+        <section id="apis">
+            <img src="img/apis.jpg" alt="Rafael Aguayo Estrada" class="blog-image">
+            <h2>Descubre el Mundo de las APIs</h2>
+            <p>Las APIs (Interfaces de Programación de Aplicaciones) son fundamentales en el desarrollo moderno de software. Aprende cómo utilizarlas para acceder a datos, funcionalidades y servicios externos, agregando valor y versatilidad a tus proyectos.</p>
+            <a href="a.html"  class="boton">Aprende APIs</a>
+        </section>
+
+        <section id="juegos">
+            <img src="img/juegos.jpg" alt="Rafael Aguayo Estrada" class="blog-image">
+
+            <h2>Explora el Mundo de los Videojuegos</h2>
+            <p>Sumérgete en el emocionante universo de los videojuegos. Descubre reseñas, análisis y recomendaciones de una amplia gama de títulos, desde clásicos atemporales hasta las últimas novedades, ¡y prepárate para vivir nuevas aventuras!</p>
+            <a href="j.html" class="boton">Video Juegos</a>
+        </section>
+    </div>
 
 
-    <footer>
-        <p>Derechos reservados &copy; 2024 Rafael Aguayo Estrada</p>
-    </footer>
+    
 </body>
 </html>
+
