@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprendiendo Lenguajes de Programación</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f8f8f8;
         }
+
         header {
             background-color: #333;
             color: #fff;
@@ -30,28 +31,55 @@
         }
         section {
             padding: 20px;
+            text-align: left;
         }
-        h2 {
+
+        h1, h2 {
+            font-weight: normal;
             color: #333;
         }
-        p {
-            color: #666;
-            line-height: 1.6;
-        }
-        pre {
-            background-color: #eee;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        code {
-            font-family: Consolas, monospace;
-        }
+
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .api-info {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .api-info h3 {
+            color: #333;
+        }
+
+        .api-info p {
+            color: #666;
+        }
+
+        .code-example {
+            background-color: #f0f0f0;
             padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .code-example code {
+            display: block;
+            white-space: pre-wrap;
         }
     </style>
 </head>
@@ -60,7 +88,7 @@
         <h1>Comprendiendo Lenguajes de Programación</h1>
 
     </header>
-   <nav>
+    <nav>
         <a href="index.html">Blog</a>
         <a href="java.html">java</a>
         <a href="html.html">html y css</a>
@@ -81,9 +109,713 @@
         <li><strong>Amplia biblioteca estándar:</strong> Python viene con una gran cantidad de módulos y bibliotecas que facilitan el desarrollo de una amplia gama de aplicaciones, desde web hasta ciencia de datos.</li>
         <li><strong>Gran comunidad y abundante documentación:</strong> Python cuenta con una comunidad activa de desarrolladores que contribuyen con bibliotecas, marcos y recursos educativos.</li>
     </ul>
-    <p>Aquí tienes un ejemplo básico de código Python que muestra cómo imprimir "Hola, mundo!":</p>
-    <pre><code>print("Hola, mundo!")</code></pre>
-    <p>Además del ejemplo anterior, Python también se utiliza comúnmente en el desarrollo web, análisis de datos, aprendizaje automático, automatización de tareas, scripting y mucho más.</p>
+    <li><strong>Introducción a Python</strong></li><br>
+Python es un lenguaje de programación interpretado y de alto nivel, creado por Guido van Rossum en 1989.
+Python tiene una sintaxis clara y fácil de leer, y soporta múltiples paradigmas de programación.
+El intérprete de Python viene incluido con una gran biblioteca estándar de módulos y funciones.
+Ejemplo de código Python:
+<div class="code-example">
+<pre><code> 
+print("¡Hola, mundo!")
+
+# Variables, tipo entero
+num = 10
+
+# Variables, tipo cadena
+string = "Esto es una cadena de texto"
+
+# Condicionales, tipo if-else
+if num > 5:
+  print("El número es mayor que 5.")
+else:
+  print("El número es menor o igual que 5.")
+</code></pre></div>
+<li><strong>Entornos de desarrollo</strong></li><br>
+Thonny es un IDE (Entorno de Desarrollo Integrado) de Python para los principiantes.
+VSCode (Visual Studio Code) es un IDE de código abierto y multiplataforma desarrollado por Microsoft, compatible con Python.
+Ejemplo de código Python en VSCode:
+<div class="code-example"><pre><code> 
+# Archivo: main.py
+
+print("¡Hola, mundo!")
+
+# Variables, tipo entero
+num = 10
+
+# Variables, tipo cadena
+string = "Esto es una cadena de texto"
+
+# Condicionales, tipo if-else
+if num > 5:
+  print("El número es mayor que 5.")
+else:
+  print("El número es menor o igual que 5.")
+Tipos de datos en Python
+
+</code></pre></div>
+<div class="code-example"><pre><code>
+Números: enteros, flotantes, complejos y booleanos.<br>
+
+Cadenas de texto: secuencias de caracteres entre comillas.<br>
+
+Listas: colecciones mutables de valores.<br>
+
+Tuplas: colecciones inmutables de valores.<br>
+
+Diccionarios: colecciones de pares clave-valor.<br>
+
+Conjuntos: colecciones de valores únicos, sin orden específico.<br>
+
+
+</code></pre></div><br>
+
+<li><strong>Ejemplo de código Python:</strong></li><br>
+
+
+<div class="code-example"><pre><code>
+# Números
+num_int = 10
+num_float = 3.14
+num_complex = 1j
+num_bool = True
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Cadenas
+string_1 = "Hola"
+string_2 = 'mundo'
+string_3 = """
+Esto es
+una cadena
+multilinea
+"""
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Listas
+list_1 = [1, 2, 3, 4, 5]
+list_2 = [10, "hola", 3.14, True]
+
+</code></pre></div>
+<div class="code-example"><pre><code>
+# Tuplas
+tuple_1 = (1, 2, 3)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Diccionarios
+dict_1 = {
+  "nombre": "Juan",
+  "edad": 30
+}
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Conjuntos
+set_1 = {1, 2, 3, 4, 5}
+Control de flujo en Python
+Condicionales: if, elif, else
+Bucles: for, while
+Ejemplo de código Python con condicionales y bucles:
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Condicionales
+num = 10
+
+if num > 5:
+  print("El número es mayor que 5.")
+elif num < 5:
+  print("El número es menor que 5.")
+else:
+  print("El número es igual a 5.")
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Bucles
+
+# Bucles for
+for i in range(10):
+  print(i)
+
+# Bucles while
+num = 10
+
+while num > 0:
+  print(num)
+  num -= 1
+Estructuras de datos en Python
+Listas: []
+Tuplas: ()
+Diccionarios: {}
+Conjuntos: set() o {}
+
+</code></pre></div><br><br>
+
+<li><strong># Listas</strong></li><br>
+
+<li><strong>**Entornos de desarrollo**</strong></li><br>
+    * Thonny es un IDE (Entorno de Desarrollo Integrado) de Python para los principiantes. Thonny es fácil de usar y permite a los usuarios aprender y experimentar con Python de una manera interactiva. Thonny es compatible con Windows, macOS y Linux.<br><br>
+    * VSCode (Visual Studio Code) es un IDE de código abierto y multiplataforma desarrollado por Microsoft, compatible con Python. VSCode es una herramienta poderosa y versátil que permite a los desarrolladores trabajar con múltiples lenguajes de programación y ofrece una amplia gama de extensiones para mejorar la experiencia de desarrollo.<br><br>
+
+<li><strong>**Tipos de datos en Python**</strong></li><br>
+    * Números: Python admite enteros, flotantes, complejos y booleanos. Los enteros y flotantes se pueden declarar directamente, mientras que los complejos se declaran con la notación `1j` y los booleanos se declaran como `True` o `False`.<br><br>
+    * Cadenas de texto: Las cadenas de texto en Python se declaran entre comillas simples o dobles. También se pueden declarar cadenas multilínea utilizando comillas triples.<br><br>
+    * Listas: Las listas en Python son colecciones mutables de valores. Se declaran entre corchetes y se pueden modificar en tiempo de ejecución.
+    * Tuplas: Las tuplas en Python son colecciones inmutables de valores. Se declaran entre paréntesis y no se pueden modificar en tiempo de ejecución.<br><br>
+    * Diccionarios: Los diccionarios en Python son colecciones de pares clave-valor. Se declaran entre llaves y se pueden modificar en tiempo de ejecución.<br><br>
+    * Conjuntos: Los conjuntos en Python son colecciones de valores únicos, sin orden específico. Se declaran con la función `set()` o entre llaves vacías.<br><br>
+
+<li><strong>**Control de flujo en Python**</strong></li><br>
+    * Condicionales: Python permite utilizar condicionales `if`, `elif` y `else` para controlar el flujo del programa.
+    * Bucles: Python admite bucles `for` y `while` para repetir bloques de código.
+<br><br>
+<li><strong>**Estructuras de datos en Python**</strong></li><br>
+    * Listas: Las listas en Python son colecciones mutables de valores. Se declaran entre corchetes y se pueden modificar en tiempo de ejecución.
+    * Tuplas: Las tuplas en Python son colecciones inmutables de valores. Se declaran entre paréntesis y no se pueden modificar en tiempo de ejecución.<br><br>
+    * Diccionarios: Los diccionarios en Python son colecciones de pares clave-valor. Se declaran entre llaves y se pueden modificar en tiempo de ejecución.<br><br>
+    * Conjuntos: Los conjuntos en Python son colecciones de valores únicos, sin orden específico. Se declaran con la función `set()` o entre llaves vacías.<br><br>
+
+<li><strong>Ejemplo de código Python:</strong></li>
+
+<div class="code-example"><pre><code># Listas
+list_1 = [1, 2, 3, 4, 5]
+list_2 = [10, "hola", 3.14, True]
+</code></pre></div><br>
+<div class="code-example"><pre><code>
+# Tuplas
+tuple_1 = (1, 2, 3)
+
+# Diccionarios
+dict_1 = {
+  "nombre": "Juan",
+  "edad": 30
+}
+</code></pre></div>
+<div class="code-example"><pre><code>
+# Conjuntos
+set_1 = {1, 2, 3, 4, 5}
+</code></pre></div><br>
+<li><strong>Funciones en Python</strong></li><br>
+Las funciones en Python se declaran utilizando la palabra clave def seguida del nombre de la función y los parámetros entre paréntesis. El bloque de código de la función se declara con sangría.
+Las funciones en Python pueden devolver un valor utilizando la palabra clave return.
+Ejemplo de código Python:
+
+<div class="code-example"><pre><code>
+def suma(a, b):
+  return a + b
+
+resultado = suma(1, 2)
+print(resultado)
+</code></pre></div><br>
+
+<li><strong>Módulos y paquetes en Python</strong></li><br>
+Los módulos en Python sonarchivos de código que contienen definiciones de variables, funciones y clases.<br><br>
+Los paquetes en Python son colecciones de módulos que se utilizan para organizar el código.
+<br><br>
+<li><strong>Ejemplo de código Python:</strong></li><br>
+
+
+<div class="code-example"><pre><code>
+# Importar un módulo
+import math
+
+resultado = math.sqrt(16)
+print(resultado)
+
+# Importar una función de un módulo
+from math import sqrt
+
+resultado = sqrt(16)
+print(resultado)
+
+# Importar todas las funciones de un módulo
+from math import *
+
+resultado = sqrt(16)
+print(resultado)
+
+# Importar un paquete
+import os
+
+resultado = os.name
+print(resultado)
+
+# Importar un módulo de un paquete
+from os import path
+
+resultado = path.abspath(".")
+print(resultado)
+
+# Importar todas las funciones de un módulo
+from os.path import *
+
+resultado = abspath(".")
+print(resultado)
+
+</code></pre></div>
+
+<li><strong>Excepciones en Python</strong></li>
+<br>
+Las excepciones en Python se utilizan para manejar errores en tiempo de ejecución.
+Python admite varias excepciones predefinidas y permite definir excepciones personalizadas.
+<br><br>
+<li><strong>Ejemplo de código Python:</strong></li><br>
+
+
+<div class="code-example"><pre><code>
+try:
+  resultado = 1 / 0
+except ZeroDivisionError:
+```1. **Control de flujo en Python**: Python permite controlar el flujo del programa utilizando estructuras de control como condicionales `if`, `elif`, `else`, bucles `for` y `while`.
+</code></pre></div><br>
+
+**Estructuras de datos en Python**: Python ofrece varias estructuras de datos para almacenar y manipular información, como listas, tuplas, diccionarios y conjuntos.
+<br><br>
+
+<li><strong>**Funciones en Python**:</strong></li>
+<br> Las funciones en Python son bloques de código reutilizable que se pueden definir utilizando la palabra clave `def` seguida del nombre de la función y los parámetros entre paréntesis. El bloque de código de la función se declara con sangría. Las funciones pueden devolver un valor utilizando la palabra clave `return`.
+<br><br>
+<li><strong>**Módulos y paquetes en Python**:</strong></li><br>
+ Los módulos en Python son archivos de código que contienen definiciones de variables, funciones y clases. Los paquetes en Python son colecciones de módulos que se utilizan para organizar el código.
+<br>
+<br>
+
+<li><strong>**Excepciones en Python**:</strong></li><br>
+ Las excepciones en Python se utilizan para manejar errores en tiempo de ejecución. Python admite varias excepciones predefinidas y permite definir excepciones personalizadas.
+<br><br>
+
+<li><strong>Ejemplo de código Python:</strong></li>
+<div class="code-example"><pre><code>
+# Listas
+list_1 = [1, 2, 3, 4, 5]
+list_2 = [10, "hola", 3.14, True]
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Tuplas
+tuple_1 = (1, 2, 3)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Diccionarios
+dict_1 = {
+  "nombre": "Juan",
+  "edad": 30
+}
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Conjuntos
+set_1 = {1, 2, 3, 4, 5}
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Funciones
+def suma(a, b):
+  return a + b
+
+resultado = suma(1, 2)
+print(resultado)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Importar un módulo
+import math
+
+resultado = math.sqrt(16)
+print(resultado)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Importar una función de un módulo
+from math import sqrt
+
+resultado = sqrt(16)
+print(resultado)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Importar todas las funciones de un módulo
+from math import *
+
+resultado = sqrt(16)
+print(resultado)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Importar un paquete
+import os
+
+resultado = os.name
+print(resultado)
+
+<div class="code-example"><pre><code>
+# Importar un módulo de un paquete
+from os import path
+
+resultado = path.abspath(".")
+print(resultado)
+
+</code></pre></div>
+# Importar todas las funciones de un módulo
+from os.path import *
+
+resultado = abspath(".")
+print(resultado)
+
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Excepciones
+try:
+  resultado = 1 / 0
+except ZeroDivisionError:
+  print("Error: División por cero")
+```1. **Trabajar con archivos en Python**
+    * Python permite trabajar con archivos utilizando la clase `file` o las funciones `open`, `read`, `write`, `append` y `close`.
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Abrir un archivo para lectura
+with open("archivo.txt", "r") as f:
+  contenido = f.read()
+
+print(contenido)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Abrir un archivo para escritura
+with open("archivo.txt", "w") as f:
+  f.write("Hola, mundo\n")
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Abrir un archivo para añadir
+with open("archivo.txt", "a") as1. **Flujo de control de Python**: Python proporciona diferentes tipos de control de flujo, incluyendo condicionales (`if`, `elif f:
+  f.write("Adiós, mundo\n")
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Cerrar un archivo
+f = open("archivo.txt", "r")
+contenido = f.read()
+`, `else`) y bucles (`for`, `while`).
+</code></pre></div><br>
+
+<li><strong>**Estructuras de datos de Python**:</strong></li><br>
+Python tiene varias estructuras de datos, como 
+listas, tuplas, diccionariosf.close()
+
+<div class="code-example"><pre><code>
+# Leer y escribir archivos
+with open("archivo.txt", "r+") as f:
+  contenido = f.read()
+  f.seek(0)
+  f.write("Nuevo contenido\n")
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Obtener información sobre un archivo
+import os
+
+resultado = os.path.abspath("archivo.txt")
+ y conjuntos.
+</code></pre></div><br>
+
+<li><strong>**Funciones de Python**:</strong></li><br>
+ Las funciones son bloques de código reutilizables que pueden definirse en Python utilizando la palabra claveprint(resultado)
+
+<div class="code-example"><pre><code>
+resultado = os.path.getsize("archivo.txt")
+print(resultado)
+
+resultado = os.path.isfile("archivo.txt")
+print(resultado)
+
+resultado = os `def` seguida del nombre de la función y los parámetros entre paréntesis.
+</code></pre></div><br>
+
+
+<li><strong>**Módulos y paquetes de Python**:</strong></li><br><br>
+<div class="code-example"><pre><code>
+ Los módulos son.path.exists("archivo.txt")
+print(resultado)
+
+resultado = os.path.splitext("archivo.txt")
+print(resultado)
+
+resultado = os archivos de código que contienen definiciones de variables, funciones y clases. Los paquetes son colecciones de módulos que se utilizan para organizar el código.
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+**Excepciones en Python.path.basename("c:/windows/system32/svchost.exe")
+print(resultado)
+
+resultado = os**: Las excepciones son errores en tiempo de ejecución que se pueden manejar en Python.
+
+</code></pre></div><br>
+
+<li><strong># Control de flujo</strong></li><br>
+
+
+<div class="code-example"><pre><code>
+# Condicional con elif
+num = 10
+
+if num > 15:
+  print("El número es mayor que 15.")
+elif num > 5:
+  print("El número es mayor que 5 pero menor que 15.")
+</code></pre></div><br>
+
+<li><strong># Bucles</strong></li><br>
+<div class="code-example"><pre><code>
+# Para
+for i in range(5):
+  print(i)
+
+# Mientras
+num = 10
+
+while num > 0:
+  print(num)
+  num -= 1
+</code></pre></div>
+
+<br>
+<li><strong># Estructuras de datos</strong></li><br>
+
+<div class="code-example"><pre><code>
+# Listas
+lista = [1, 2, 3, 4, 5]
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Tuplas
+tupla = (1, 2, 3)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Diccionarios
+diccionario = {
+  "nombre": "Juan",
+  "edad": 30
+}
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Conjuntos
+conjunto = {1, 2, 3, 4, 5}
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Funciones
+
+def suma(a, b):
+  return a + b
+</code></pre></div><br>
+
+<li><strong>resultado =
+```A continuación, se muestra un ejemplo de cómo leer y escribir archivos en Python utilizando la clase `file` y las funciones `open`, `read`, `write`, `append` y `close`.</strong></li><br>
+
+<div class="code-example"><pre><code>
+# Abrir un archivo para lectura
+archivo = open("archivo.txt", "r")
+contenido = archivo.read()
+archivo.close()
+
+print(contenido)
+</code></pre></div>
+<div class="code-example"><pre><code>
+# Abrir un archivo para escritura
+archivo = open("archivo.txt", "w")
+archivo.write("Hola, mundo\n")
+archivo.close()
+</code></pre></div>
+<div class="code-example"><pre><code>
+# Abrir un archivo para añadir
+archivo = open("archivo.txt", "a")
+archivo.write("Adiós, mundo\n")
+archivo.close()
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Leer y escribir archivos
+with open("archivo.txt", "r+") as archivo:
+  contenido = archivo.read()
+  archivo.seek(0)
+  archivo.write("Nuevo contenido\n")
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Obtener información sobre un archivo
+import os
+
+resultado = os.path.abspath("archivo.txt")
+print(resultado)
+
+resultado = os.path.getsize("archivo.txt")
+print(resultado)
+
+resultado = os.path.isfile("archivo.txt")
+print(resultado)
+
+resultado = os.path.splitext("archivo.txt")
+print(resultado)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Excepciones en Python
+
+try:
+  archivo = open("archivo.txt", "r")
+  contenido = archivo.read()
+  archivo.close()
+except FileNotFoundError:
+  print("El archivo no existe.")
+</code></pre></div><br>
+
+
+<li><strong># Módulos y paquetes de Python</strong></li><br>
+
+<li><strong> Importar un módulo
+import os</strong></li><br>
+
+<li><strong># Importar una función específica de un módulo
+from os import path</strong></li><br>
+
+<li><strong># Importar todas las funciones de un módulo
+from os import *</strong></li><br>
+
+<li><strong># Importar un paquete
+import math</strong></li><br>
+
+<div class="code-example"><pre><code>
+# Utilizar una función de un paquete
+resultado = math.sqrt(9)
+print(resultado)
+</code></pre></div><br><br>
+
+<li><strong># Estructuras de datos</strong></li><br>
+
+<div class="code-example"><pre><code>
+# Listas
+lista = [1, 2, 3, 4, 5]
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Tuplas
+tupla = (1, 2, 3)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Diccionarios
+diccionario = {
+  "nombre": "Juan",
+  "edad": 30
+}
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Conjuntos
+conjunto = {1, 2, 3, 4, 5}
+</code></pre></div><br><br>
+
+<li><strong># Funciones</strong></li><br>
+
+<div class="code-example"><pre><code>
+def suma(a, b):
+  return a + b
+
+resultado = suma(1, 2)
+print(resultado)
+</code></pre></div>
+<br>
+En este ejemplo, se utiliza el bloque try-except para manejar la excepción FileNotFoundError, que se produce cuando se intenta abrir un archivo que no existe.A continuación, se muestra un ejemplo de cómo leer y escribir archivos en Python utilizando la clase file y las funciones open, read, write, append y close.
+<br><br>
+
+<div class="code-example"><pre><code>
+# Abrir un archivo para lectura
+with open("archivo.txt", "r") as archivo:
+  contenido = archivo.read()
+
+print(contenido)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Abrir un archivo para escritura
+with open("archivo.txt", "w") as archivo:
+  archivo.write("Hola, mundo\n")
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Abrir un archivo para añadir
+with open("archivo.txt", "a") as archivo:
+  archivo.write("Adiós, mundo\n")
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Leer y escribir archivos
+with open("archivo.txt", "r+") as archivo:
+  contenido = archivo.read()
+  archivo.seek(0)
+  archivo.write("Nuevo contenido\n")
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Obtener información sobre un archivo
+import os
+
+resultado = os.path.abspath("archivo.txt")
+print(resultado)
+
+resultado = os.path.getsize("archivo.txt")
+print(resultado)
+
+resultado = os.path.isfile("archivo.txt")
+print(resultado)
+
+resultado = os.path.splitext("archivo.txt")
+print(resultado)
+</code></pre></div>
+
+<div class="code-example"><pre><code>
+# Excepciones en Python
+
+try:
+  archivo = open("archivo.txt", "r")
+  contenido = archivo.read()
+  archivo.close()
+except FileNotFoundError:
+  print("El archivo no existe.")
+</code></pre></div>
+
+<br><br><li><strong># Módulos y paquetes de Python</strong></li><br>
+
+<div class="code-example"><pre><code>
+# Importar un módulo
+import os
+</code></pre></div>
+<div class="code-example"><pre><code>
+# Importar una función específica de un módulo
+from os import path
+</code></pre></div>
+<div class="code-example"><pre><code>
+# Importar todas las funciones de un módulo
+from os import *
+</code></pre></div>
+<div class="code-example"><pre><code>
+# Importar un paquete
+import math
+</code></pre></div>
+<div class="code-example"><pre><code>
+# Utilizar una función de un paquete
+resultado = math.sqrt(9)
+print(resultado)
+</code></pre></div><br><br><br>
+
+
 </section>
 
 
