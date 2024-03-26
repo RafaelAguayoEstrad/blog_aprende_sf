@@ -56,25 +56,26 @@ section {
 }
 
 /* Estilos específicos para dispositivos móviles */
-@media screen and (max-width: 768px) {
-    #izquierda, #derecha {
-        width: 100%;
-        padding: 0 10px;
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 10px;
+    }
+    .boton {
+        padding: 8px 16px;
+    }
+    .blog-image, .blog-image2 {
+        max-width: 100%;
+        border-radius: 5px;
     }
 }
 
 /* Estilos para la imagen del blog */
-.blog-image, .blog-image2 {
+.blog-image2 {
     width: 100%;
-    max-width: 100%; /* Cambiado para adaptarse al ancho de la pantalla */
+    max-width: 100%;
     display: block;
     margin: 0 auto 20px;
-    border-radius: 5px;
-}
-
-.blog-image2 {
-    max-width: 80%; /* Cambiado para adaptarse al ancho de la pantalla */
-    border-radius: 50%; /* Corregido para un círculo perfecto */
+    border-radius: 50%; /* para un círculo */
 }
 
 /* Estilos para el footer */
@@ -87,3 +88,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
