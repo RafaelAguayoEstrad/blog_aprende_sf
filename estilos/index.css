@@ -1,0 +1,94 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boton {
+    display: inline-block;
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #333;
+}
+
+.redes {
+    margin-top: 20px; /* Agregamos espacio entre la sección de publicaciones y las redes */
+}
+
+.redes a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    transition: transform;
+}
+
+#izquierda {
+    width: 45%;
+    padding: 0 20px;
+}
+
+#derecha {
+    width: 45%;
+    padding: 0 20px;
+}
+
+.blog-image {
+    width: 100%; /* Para que la imagen ocupe todo el ancho */
+    max-width: 700px; /* Establecer un ancho máximo */
+    display: block;
+    margin: 0 auto 20px; /* Centrar la imagen y añadir espacio en la parte inferior */
+    border-radius: 5px; /* Agregar bordes redondeados */
+}
+
+.blog-image2 {
+    width: 100%; /* Para que la imagen ocupe todo el ancho */
+    max-width: 400px; /* Establecer un ancho máximo */
+    display: block;
+    margin: 0 auto 20px; /* Centrar la imagen y añadir espacio en la parte inferior */
+    border-radius: 500px; /* Agregar bordes redondeados */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
