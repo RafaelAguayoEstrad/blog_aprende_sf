@@ -1,74 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 section {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.game {
-    margin-bottom: 40px;
-    width: calc(45% - 20px);
+    margin-bottom: 30px;
     background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.game:hover {
-    transform: translateY(-5px);
-}
-
-.game img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-}
-
-.game-info {
+    border-radius: 5px;
     padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    margin-top: 0;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-a {
-    color: #007bff;
+.boton {
+    display: inline-block;
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #333;
+}
+
+.redes {
+    margin-top: 20px; /* Agregamos espacio entre la sección de publicaciones y las redes */
+}
+
+.redes a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    transition: transform;
+}
+
+#izquierda {
+    width: 45%;
+    padding: 0 20px;
+}
+
+#derecha {
+    width: 45%;
+    padding: 0 20px;
+}
+
+.blog-image {
+    width: 100%; /* Para que la imagen ocupe todo el ancho */
+    max-width: 700px; /* Establecer un ancho máximo */
+    display: block;
+    margin: 0 auto 20px; /* Centrar la imagen y añadir espacio en la parte inferior */
+    border-radius: 5px; /* Agregar bordes redondeados */
+}
+
+.blog-image2 {
+    width: 100%; /* Para que la imagen ocupe todo el ancho */
+    max-width: 400px; /* Establecer un ancho máximo */
+    display: block;
+    margin: 0 auto 20px; /* Centrar la imagen y añadir espacio en la parte inferior */
+    border-radius: 500px; /* Agregar bordes redondeados */
 }
 
 footer {
@@ -79,14 +90,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Media Queries */
-
+} 
 @media only screen and (max-width: 768px) {
     .game {
         width: calc(50% - 20px);
